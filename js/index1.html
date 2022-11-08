@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script type="text/javascript" src="/js/external.js">
+    </script>
+</head>
+<body>
+    <input type="button" value="Click" onclick="msg()">
+    <script>
+//Function    
+       function msg(n1,n2){
+        return(n1+n2);
+       }
+       document.write(msg(5,5));
+       var a=[1,2,3,4,5];
+       document.write(a);
+       for(var x=0;x<a.length;x++){
+        document.write("   "+a[x]);
+       }
+       var arr= new Array();
+       arr[0]="Hello";
+       document.write(arr[0]);
+       document.write("\n");
+//Class
+       //-> literal
+       emp={
+        id: 1,
+        name: "Ilyas",
+        phno: "97236726"
+       }
+       document.write(emp.name);
+
+       //-> direct
+       var emp= new Object()
+       emp.id= 45;
+       document.write(emp.id);
+
+       //->constructor
+       function emp1(id,name,salary){
+        this.id=id;
+        this.name=name;
+        this.salary=salary;
+       }
+       e=new emp1(10,"nakulan",5000);
+       document.write(e.name);
+//String
+       //-> literal
+       var s="Hello";
+       document.write(s);
+       //-> new
+       var s1= new String();
+       s1="hi";
+       document.write(s1);
+
+
+
+
+    </script>
+    
+    
+
+</body>
+</html>
